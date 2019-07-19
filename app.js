@@ -19,4 +19,8 @@ router.get('/Views/information_tab', function (req, res) {
 res.sendFile(path.join(__dirname + '/Views/Park/information_tab.html'));
 });
 
+router.get('/Views/sign_up', function (req, res) {
+res.sendFile(path.join(__dirname + '/Views/Park/sign_up.html'));
+});
+
 app.use('/', router);

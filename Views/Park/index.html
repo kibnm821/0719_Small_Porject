@@ -12,18 +12,18 @@
         <title>SYS INFO</title>
     </head>
     <body>
-        <div class="container">
-            <div class="header"><!--header END-->
+        <div>
+            <div class="header container"><!--HEADER-->
                 <div class="mt-5">
-                    <nav class="navbar navbar-expand-sm bg-dark navbar-dark rounded-lg col-12 justify-content-between">
-                        <div>
-                            <a class="navbar-brand" href="/">SYS INFO</a>
+                    <nav class="navbar navbar-expand-sm bg-dark navbar-dark rounded-lg col-12 justify-content-between mb-5">
+                        <div><!--title-->
+                            <a class="navbar-brand" href="/"><h1>SYS INFO</h1></a>
                         </div>
                         <div>
                             <ul class="navbar-nav justify-content-between">
-                                <li class="nav-item dropdown">
+                                <li class="nav-item dropdown"><!--menu-->
                                     <a class="nav-link dropdown" href="" data-toggle="dropdown">
-                                    ISSUE/NEWS
+                                    <h3>ISSUE/NEWS</h3>
                                     </a>
                                     <div class="dropdown-menu">
                                         <a class="dropdown-item" href="/Views/information_tab">Issue/News Main</a>
@@ -36,19 +36,31 @@
                                 </li>
                             </ul>
                         </div>
-                        <ul class="navbar-nav">
+                        <ul class="navbar-nav"><!--login-->
+                                <li class="nav-item">
+                                <a class="nav-link" href="/Views/sign_up"><h3>Sign Up</h3></a>
+                            </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">sign up</a>
-                            </li><p>and</p>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">sign in</a>
+                                <a class="nav-link" href="#"><h3>Sign In</h3></a>
                             </li>
                         </ul>
                     </nav>
                 </div>
             </div><!--Header END-->
-            <div><!--BODY-->
-
+            <div class="container"><!--BODY-->
+                <div class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="/Park/main/Phrack.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/Park/main/server.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/Park/main/xeon.jpg" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                </div>
             </div><!--BODY END-->
         </div>
     </body>
