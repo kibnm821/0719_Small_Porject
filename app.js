@@ -12,8 +12,11 @@ const router = express.Router();
 app.use(express.static('public'))
 
 router.get('/', function (req, res) {
-res.sendFile(path.join(__dirname + '/Views.html'));
+res.sendFile(path.join(__dirname + '/Views/Park/index.html'));
 });
 
+router.get('/Views/information_tab', function (req, res) {
+res.sendFile(path.join(__dirname + '/Views/Park/information_tab.html'));
+});
 
 app.use('/', router);
