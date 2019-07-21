@@ -11,7 +11,14 @@ const router = express.Router();
 
 app.use(express.static('public'))
 
+//ps.형 여기 인덱스로 들어가는거요 127.0.0.1:3000/주소일때 접속하는 주소
+//이 분류 페이지 제가 만들어 놓을테니까 이거는 건드시지 마시고 나머지 주소 건드시면 됩니다.
+
 router.get('/', function (req, res) {
+res.sendFile(path.join(__dirname + '/Views/index.html'));
+});
+
+router.get('/park', function (req, res) {
 res.sendFile(path.join(__dirname + '/Views/Park/index.html'));
 });
 
@@ -23,10 +30,19 @@ router.get('/Views/sign_up', function (req, res) {
 res.sendFile(path.join(__dirname + '/Views/Park/sign_up.html'));
 });
 
+router.get('/Views/notice1', function (req, res) {
+res.sendFile(path.join(__dirname + '/Views/Park/notice1.html'));
+});
+
+router.get('/Views/notice2', function (req, res) {
+res.sendFile(path.join(__dirname + '/Views/Park/notice2.html'));
+});
+
 router.get('/action', function (req, res) {
 console.log(req.query);
-res.send('Request email : '+req.query.email+'<br>Request password : '+req.query.pwd+
-'<br>Request nickname : '+req.query.nick+'<br>Request address1 : '+req.query.add1+'<br>Request addres2 : '+req.query.add2)
+res.send('Request id : '+req.query.id+'<br>Request password : '+req.query.pwd+
+'<br>Request email : '+req.query.email+'<br>Request NickName : '+req.query.nc+
+'<br>Request address1 : '+req.query.add1+'<br>Request addres2 : '+req.query.add2)
 });
 
 app.use('/', router);

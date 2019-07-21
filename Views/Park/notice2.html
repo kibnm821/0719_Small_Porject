@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <meta charset="UTF-8">
 <html>
@@ -9,7 +10,8 @@
 
         <!--CSS-->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <title>SINB</title>
+        <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+        <title>Detail Information Link</title>
     </head>
     <body class="container">
         <div class="Header"><!--header-->
@@ -21,12 +23,10 @@
                     <div><!--login link-->
                         <ul class="navbar-nav">
                             <li class="nav-item bg-primary rounded" style="margin-right: 8.5px;">
-                                <a class="nav-link text-light pt-0 pb-0 pl-8.5 pr-8.5" href="/Views/sign_up">
-                                    Sign Up
-                                </a>
+                                <a class="nav-link text-light pt-0 pb-0 pl-8.5 pr-8.5" href="/Views/sign_up">Sign Up</a>
                             </li>
                             <li class="nav-item bg-primary rounded ml-8.5" style="margin-left: 8.5px;">
-                                <a class="nav-link text-light pt-0 pb-0 pl-8.5 pr-8.5" href="/Views/sign_in">
+                                <a class="nav-link text-light pt-0 pb-0 pl-8.5 pr-8.5" href="sign_in">
                                 Sign In
                                 </a>
                             </li>
@@ -34,16 +34,16 @@
                     </div><!--login link end-->
                 </nav>
             </div><!--top END-->
-
+        
             <!--title-->
             <div class="text-center mt-5">
-                <a href="/park" class="bg-transparent text-dark navbar-brand hover">
+                <a href="/park" class="bg-transparent text-dark navbar-brand">
                     <h1 class="display-5 font-weight-bold">Security Imformation Notice Board</h1>
                     <p class="display-5 font-weight-bold">(SINB)</p>
                 </a>
             </div>
             <!--title END-->
-
+        
             <!--menu-->
             <nav class="navbar navbar-expand-md bg-dark navbar-dark justify-content-between">
                 <div>
@@ -79,28 +79,31 @@
                     </ul>
                 </div>
             </nav>
-        </div><!--header-->
-
-        <div class="container" style="max-width: 90%;"><!--BODY-->
-            <div class="carousel slide" data-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <a href="/">
-                            <img src="/Park/main/Phrack.jpg" class="d-block w-100">
-                        </a>
-                    </div>
-                    <div class="carousel-item">
-                        <a href="/Views/notice1">
-                            <img src="/Park/main/System.jpg" class="d-block w-100">
-                        </a>
-                    </div>
-                    <div class="carousel-item">
-                        <a href="/Views/notice2">
-                            <img src="/Park/main/lock.jpg" class="d-block w-100">
-                        </a>
-                    </div>
+        </div><!--header END-->
+        <div><!--body-->
+            <div class="m-3"><!--little title-->
+                <h1 class="display-5 text-center"><i class='fas fa-circle' style='font-size:24px'></i>세부 정보<i class='fas fa-circle' style='font-size:24px'></i></h1>
+            </div><!--little title-->
+            <div class="row justify-content-center">
+                <div class="card m-3 col-3" style="width: 18rem;">
+                    <a href="https://www.kisa.or.kr/" class="text-center text-dark">
+                        <img src="/Park/imformation/notice2/kisa.jpg">
+                        <p>한국 인터넷 진흥원(KISA)</p>
+                    </a>
+                </div>
+                <div class="card m-3 col-3" style="width: 18rem;">
+                    <a href="http://www.boannews.com/" class="text-center text-dark">
+                        <img src="/Park/imformation/notice2/security.png">
+                        <p>보안 뉴스 페이지</p>
+                    </a>
+                </div>
+                <div class="card m-3 col-3" style="width: 18rem;">
+                    <a href="https://www.dailysecu.com/" class="text-center text-dark">
+                        <img src="/Park/imformation/notice2/daily.png">
+                        <p>데일리시큐 페이지</p>
+                    </a>
                 </div>
             </div>
-        </div><!--BODY END-->
+        </div><!--body END-->
     </body>
 </html>
