@@ -45,4 +45,9 @@ res.send('Request id : '+req.query.id+'<br>Request password : '+req.query.pwd+
 '<br>Request address1 : '+req.query.add1+'<br>Request addres2 : '+req.query.add2)
 });
 
+router.get('/action_LOGIN', function (req, res) {
+console.log(req.query);
+res.send('Request id : '+req.query.id+'<br>Request password : '+req.query.pwd)
+});
+
 app.use('/', router);
