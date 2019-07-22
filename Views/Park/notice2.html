@@ -14,6 +14,35 @@
         <title>Detail Information Link</title>
     </head>
     <body class="container">
+
+        <!--modal-->
+        <div class="modal fade" id="login" tabindex="-1" role="dialog">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <form action="/login">
+                            <div class="modal-header text-center bg-secondary text-white">
+                                <h4 class="modal-title w-100 ">Sign in</h4>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body mx-3">
+                                <div class="md-form mb-5">
+                                    <label data-error="wrong" data-success="right" for="defaultForm-email"><strong>ID</strong></label>
+                                    <input type="text" class="form-control validate" name="id">
+                                </div>
+                            <div class="md-form mb-4">
+                                <label data-error="wrong" data-success="right" for="defaultForm-pass"><strong>password</strong></label>
+                                <input type="password" id="defaultForm-pass" class="form-control validate" name="pwd">
+                            </div>
+                        </div>
+                        <div class="modal-footer d-flex justify-content-center">
+                            <button class="btn btn-default btn-outline-secondary">Login</button>
+                        </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!--Modal in end-->
+
         <div class="Header"><!--header-->
             <div><!--top-->
                 <nav class="navbar navbar-expand-sm navbar-dark fixed-top justify-content-between">
@@ -29,24 +58,8 @@
                                     </a>
                                 </li>
                             </div>
-                            <div class="dropleft">
-                                <button class="btn pb-2 btn-primary" type="button" data-toggle="dropdown">
-                                    SIGN IN
-                                </button>
-                                <div class="dropdown-menu p-2">
-                                    <form action="/action_LOGIN"><!--login form-->
-                                        <div class="form-group from-inline">
-                                            <label for="ID">ID:</label>
-                                            <input type="text" class="form-control col" placeholder="ID" name="id">
-                                        </div>
-
-                                        <div class="form-group">
-                                            <label for="PW">PW:</label>
-                                            <input type="password" class="form-control" placeholder="Password" name="pwd">
-                                        </div>
-                                        <button type="submit" class="btn btn-primary">SIGN IN</button>
-                                    </form>
-                                </div>
+                            <div>
+                                <button class="bg-primary text-light rounded border-0 nav-item padding p-2" data-toggle="modal" data-target = "#login">Sign In </button>
                             </div>
                         </ul>
                     </div><!--login link end-->
@@ -103,19 +116,19 @@
                 <h1 class="display-5 text-center"><i class='fas fa-circle' style='font-size:24px'></i>세부 정보<i class='fas fa-circle' style='font-size:24px'></i></h1>
             </div><!--little title-->
             <div class="row justify-content-center">
-                <div class="card m-3 col-3" style="width: 18rem;">
+                <div class="card m-3 col-lg-3 col-md-5 col-sm-12" style="width: 18rem;">
                     <a href="https://www.kisa.or.kr/" class="text-center text-dark">
                         <img src="/Park/imformation/notice2/kisa.jpg">
                         <p>한국 인터넷 진흥원(KISA)</p>
                     </a>
                 </div>
-                <div class="card m-3 col-3" style="width: 18rem;">
+                <div class="card m-3 col-lg-3 col-md-5 col-sm-12" style="width: 18rem;">
                     <a href="http://www.boannews.com/" class="text-center text-dark">
                         <img src="/Park/imformation/notice2/security.png">
                         <p>보안 뉴스 페이지</p>
                     </a>
                 </div>
-                <div class="card m-3 col-3" style="width: 18rem;">
+                <div class="card m-3 col-lg-3 col-md-5 col-sm-12" style="width: 18rem;">
                     <a href="https://www.dailysecu.com/" class="text-center text-dark">
                         <img src="/Park/imformation/notice2/daily.png">
                         <p>데일리시큐 페이지</p>
