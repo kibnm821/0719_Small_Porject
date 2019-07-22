@@ -10,6 +10,7 @@ const path = require('path');
 const router = express.Router();
 
 app.use(express.static('public'))
+app.use(express.static('Views'))
 
 //ps.형 여기 인덱스로 들어가는거요 127.0.0.1:3000/주소일때 접속하는 주소
 //분류 페이지 제가 만들어 놓을테니까 이거는 건드시지 마시고 나머지 주소 건드시면 됩니다.
@@ -67,7 +68,7 @@ res.send('Request id : '+req.query.id+'<br>Request password : '+req.query.pwd+
 router.get('/signup', function (req, res) {
     console.log(req.query);
     res.send('<br>Request email : '+req.query.email+'<br>Request first name : '+req.query.firstname+
-    '<br>Request last name : '+req.query.lastname+'<br>Request addres2 : '+req.query.passwd)
+    '<br>Request last name : '+req.query.lastname+'<br>Request password : '+req.query.passwd)
     });
 
 router.get('/action_LOGIN', function (req, res) {
