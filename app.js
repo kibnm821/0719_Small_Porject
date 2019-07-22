@@ -73,7 +73,12 @@ res.send('Request id : '+req.query.id+'<br>Request password : '+req.query.pwd)
 router.get('/signup', function (req, res) {
     console.log(req.query);
     res.send('<br>Request email : '+req.query.email+'<br>Request first name : '+req.query.firstname+
-    '<br>Request last name : '+req.query.lastname+'<br>Request password : '+req.query.passwd)
+    '<br>Request last name : '+req.query.lastname+'<br>Request p : '+req.query.passwd)
+    });
+
+router.get('/signin', function (req, res) {
+    console.log(req.query);
+    res.send('<br>Request ID : '+req.query.logid+'<br>Request PW : '+req.query.logpw)
     });
 
 router.get('/action_LOGIN', function (req, res) {
