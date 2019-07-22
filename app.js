@@ -40,6 +40,21 @@ router.get('/Views/notice2', function (req, res) {
 res.sendFile(path.join(__dirname + '/Views/Park/notice2.html'));
 });
 
+router.get('/Views/home', function (req, res) {
+    res.sendFile(path.join(__dirname + '/Views/Jeon/home.html'));
+});
+
+router.get('/Views/store', function (req, res) {
+    res.sendFile(path.join(__dirname + '/Views/Jeon/store.html'));
+});
+
+router.get('/Views/signup', function (req, res) {
+    res.sendFile(path.join(__dirname + '/Views/Jeon/signup.html'));
+});
+    
+    
+    
+
 //request
 
 router.get('/action', function (req, res) {
