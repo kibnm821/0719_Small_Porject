@@ -65,6 +65,11 @@ res.send('Request id : '+req.query.id+'<br>Request password : '+req.query.pwd+
 '<br>Request address1 : '+req.query.add1+'<br>Request addres2 : '+req.query.add2)
 });
 
+router.get('/login', function (req, res) {
+console.log(req.query);
+res.send('Request id : '+req.query.id+'<br>Request password : '+req.query.pwd)
+});
+
 router.get('/signup', function (req, res) {
     console.log(req.query);
     res.send('<br>Request email : '+req.query.email+'<br>Request first name : '+req.query.firstname+
