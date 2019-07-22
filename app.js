@@ -12,7 +12,9 @@ const router = express.Router();
 app.use(express.static('public'))
 
 //ps.형 여기 인덱스로 들어가는거요 127.0.0.1:3000/주소일때 접속하는 주소
-//이 분류 페이지 제가 만들어 놓을테니까 이거는 건드시지 마시고 나머지 주소 건드시면 됩니다.
+//분류 페이지 제가 만들어 놓을테니까 이거는 건드시지 마시고 나머지 주소 건드시면 됩니다.
+
+//localhost domain
 
 router.get('/', function (req, res) {
 res.sendFile(path.join(__dirname + '/Views/index.html'));
@@ -37,6 +39,8 @@ res.sendFile(path.join(__dirname + '/Views/Park/notice1.html'));
 router.get('/Views/notice2', function (req, res) {
 res.sendFile(path.join(__dirname + '/Views/Park/notice2.html'));
 });
+
+//request
 
 router.get('/action', function (req, res) {
 console.log(req.query);
